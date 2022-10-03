@@ -14,6 +14,8 @@ async function makeApiCall() {
 
         console.log(results);
 
+        resultsContainer.innerHTML = results();
+
     } catch (error) {
         console.log(error);
         resultsContainer.innerHTML = alert("error", error);
